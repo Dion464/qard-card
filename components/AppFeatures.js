@@ -1,96 +1,91 @@
-import React from 'react';
+import Image from 'next/image';
 
 export default function AppFeatures() {
   return (
-    <section className="w-full py-16 px-8 md:px-16 bg-qard-dark">
-      <h2 className="text-white text-4xl md:text-5xl font-bold mb-16 text-center">
-        Discover the power of crypto with the Qard app.
-      </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
-        <div>
-          {/* App screenshot placeholder */}
-          <div className="h-[600px] w-full bg-gradient-to-br from-blue-400 to-blue-900 rounded-2xl"></div>
+    <div className="flex justify-center items-center py-20 bg-black">
+      <div className="grid grid-cols-2 gap-8 w-[1004px]">
+        {/* First card */}
+        <div className="bg-[rgba(11,30,49,1)] p-8 rounded-[60px] h-[375px] flex items-end">
+          <h2 className="text-white font-helvetica font-medium text-[40px] leading-[1.2]">
+            Simply tap the card<br />to your phone <span className="text-[#3594EC]">to use<br />Qard wallet</span>
+          </h2>
         </div>
-        
-        <div className="flex flex-col">
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-2xl font-bold">Manage</h3>
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </div>
-            <p className="text-gray-400">
-              Get access to live tokens for thousands of cryptocurrency coins and tokens, compare prices and make more informed investment decisions.
-            </p>
-          </div>
-          
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-2xl font-bold">Swap</h3>
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-2xl font-bold">Buy</h3>
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-2xl font-bold">Sell</h3>
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-2xl font-bold">Earn</h3>
-              <span className="text-blue-400 text-sm">Coming soon</span>
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div className="flex space-x-6 mt-auto">
-            <div className="w-32 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-              <span className="text-white">App Store</span>
-            </div>
-            <div className="w-32 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-              <span className="text-white">Google Play</span>
-            </div>
-            <div className="w-32 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-              <span className="text-white">Android APK</span>
-            </div>
-            <div className="w-32 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-              <span className="text-white">QR Code</span>
+
+        {/* Second card - with gradient and phone image */}
+        <div className="bg-gradient-to-b from-[#3594EC] via-[#184470] to-[#000209] p-8 rounded-[60px] h-[375px] relative overflow-hidden">
+          <div className="absolute inset-0 flex items-end justify-center">
+            <div className="relative w-full h-full">
+              <Image
+                src="/undermodile.png"
+                alt="Background"
+                width={400}
+                height={300}
+                className="object-contain"
+                style={{ position: 'absolute', bottom: 50, right: 50}}
+              />
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                <Image
+                  src="/mobile.svg"
+                  alt="Mobile"
+                  width={200}
+                  height={400}
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div className="text-center">
-        <h3 className="text-white text-3xl font-bold mb-8">
-          Access to thousands of digital assets
-        </h3>
-        <div className="flex flex-wrap justify-center gap-8">
-          {/* Crypto icons placeholders */}
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div key={item} className="w-16 h-16 bg-gray-700 rounded-full"></div>
-          ))}
+
+        {/* Third card - blue background with card images */}
+        <div className="bg-[#3594EC] p-8 rounded-[60px] h-[375px] relative overflow-hidden">
+          <div className="text-white h-full flex flex-col justify-between">
+            <div className="mb-auto">
+              <h2 className="text-2xl font-normal leading-tight mb-4">
+                Wallet activation<br />takes less than
+              </h2>
+            </div>
+            <p className="text-[60px] font-bold leading-none">3 minutes</p>
+          </div>
+          <div className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4">
+            <Image
+              src="/secondimage.png"
+              alt="Qard cards"
+              width={400}
+              height={250}
+              className="object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Fourth card */}
+        <div className="bg-[rgba(11,30,49,1)] p-8 rounded-[60px] h-[375px] flex items-end">
+          <p className="text-gray-300 text-2xl leading-relaxed">
+            During the activation process, the card's embedded chip generates a random private key, 
+            <span className="text-white font-medium"> ensuring that the wallet cannot be compromised.</span>
+          </p>
+        </div>
+
+        {/* Fifth card */}
+        <div className="bg-[rgba(11,30,49,1)] p-8 rounded-[60px] h-[375px] flex items-end">
+          <p className="text-gray-300 text-2xl leading-relaxed">
+            A Qard Wallet set can contain up to three Qard cards. 
+            <span className="text-white font-medium"> You get three equal cards to one wallet, just like having three identical keys to your room door.</span>
+          </p>
+        </div>
+
+        {/* Sixth card - with box image */}
+        <div className="bg-[rgba(11,30,49,1)] p-8 rounded-[60px] h-[375px] relative">
+          <div className="absolute top-0 left-0">
+            <Image
+              src="/lastimage.svg"
+              alt="Qard box"
+              width={500}
+              height={400}
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-} 
+}
