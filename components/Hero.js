@@ -3,44 +3,44 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-screen relative overflow-hidden bg-black">
+    <section className="w-full min-h-[90vh] sm:min-h-screen relative overflow-hidden bg-black">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-[#0A1F3B]/70" />
 
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-center items-start">
-        <div className="container mx-auto px-8 flex flex-col">
+        <div className="container mx-auto px-4 sm:px-8 flex flex-col">
           {/* Main title */}
-          <div className="mt-48 mb-8">
-            <div className="text-[280px] md:text-[320px] font-[500] leading-[0.85] tracking-[-0.02em] bg-gradient-to-r from-black via-[#50ABFF] to-[#50ABFF]/90 bg-clip-text text-transparent">
+          <div className="mt-24 sm:mt-48 mb-4 sm:mb-8">
+            <div className="text-[120px] sm:text-[200px] md:text-[280px] lg:text-[320px] font-[500] leading-[0.85] tracking-[-0.02em] bg-gradient-to-r from-black via-[#50ABFF] to-[#50ABFF]/90 bg-clip-text text-transparent">
               Qard.
             </div>
-            <div className="text-[160px] md:text-[200px] font-[500] leading-[0.85] tracking-[-0.02em] text-[#50ABFF]/70 w-full text-center">
+            <div className="text-[80px] sm:text-[120px] md:text-[160px] lg:text-[200px] font-[500] leading-[0.85] tracking-[-0.02em] text-[#50ABFF]/70 w-full text-center">
               Your wallet.
             </div>
           </div>
         </div>
       </div>
 
-      {/* Right side content */}
-      <div className="absolute top-48 right-8 max-w-[380px]">
-        <p className="text-white text-3xl font-light mb-3">From $45</p>
-        <p className="text-[#6B7280] text-lg font-light leading-relaxed">
+      {/* Right side content - moves below on mobile */}
+      <div className="absolute top-[50vh] left-4 sm:top-48 sm:right-8 sm:left-auto max-w-[90%] sm:max-w-[380px]">
+        <p className="text-white text-xl sm:text-2xl md:text-3xl font-light mb-2 sm:mb-3">From $45</p>
+        <p className="text-[#6B7280] text-sm sm:text-base md:text-lg font-light leading-relaxed">
           As sleek as your bank card, as secure as a bank vault.
-          <br />
+          <br className="hidden sm:block" />
           Store, buy, earn, transfer, and swap thousands of coins
-          <br />
+          <br className="hidden sm:block" />
           and tokens in one place.
         </p>
         
-        <button className="mt-8 bg-transparent border border-[#50ABFF] text-[#50ABFF] px-6 py-2 rounded-full text-base font-light inline-flex items-center hover:bg-[#50ABFF]/10 transition-all">
+        <button className="mt-4 sm:mt-8 bg-transparent border border-[#50ABFF] text-[#50ABFF] px-4 sm:px-6 py-1 sm:py-2 rounded-full text-sm sm:text-base font-light inline-flex items-center hover:bg-[#50ABFF]/10 transition-all">
           Try Qard 
           <span className="ml-2">→</span>
         </button>
       </div>
 
       {/* Card with enhanced glow effect */}
-      <div className="absolute -left-43 top-12 w-[50%] h-[50%]">
+      <div className="absolute -left-24 top-12 w-[70%] sm:w-[50%] h-[40%] sm:h-[50%]">
         <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[150px] transform rotate-12" />
         <Image
           src="/herocard.svg"

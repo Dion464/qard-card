@@ -10,13 +10,12 @@ export default function Header() {
       }}
     >
       <div className="flex items-center">
-        {/* Logo placeholder */}
-        <div className="h-8 w-20">
+        <div className="h-6 w-16 sm:h-8 sm:w-20">
           <img src="/headerlogo.svg" alt="Qard Logo" className="h-full" />
         </div>
       </div>
       <div>
-        <button className="bg-transparent border border-[#50ABFF] text-[#50ABFF] px-3 py-1 rounded-full hover:bg-[#50ABFF]/10 transition-all">
+        <button className="bg-transparent border border-[#50ABFF] text-[#50ABFF] text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-1 rounded-full hover:bg-[#50ABFF]/10 transition-all">
           Try Qard
         </button>
       </div>

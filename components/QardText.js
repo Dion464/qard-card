@@ -1,9 +1,20 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function QardText() {
   return (
-    <section className="w-full min-h-[50vh] flex items-center justify-center bg-black">
-      <div className="container mx-auto flex justify-end px-8">
+    <section className="w-full min-h-[50vh] flex items-center justify-center bg-black relative">
+      {/* Small logo in top left corner */}
+      <div className="absolute top-8 left-8">
+        <Image
+          src="/path/to/logo.svg" // Update with the correct path
+          alt="Qard Logo"
+          width={40} // Adjust size as needed
+          height={40}
+        />
+      </div>
+      
+      <div className="container mx-auto flex justify-end items-center px-8">
         <div className="max-w-[50%]">
           <p
             style={{

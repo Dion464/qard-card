@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import Swisssection from '@/components/swisssection';
-import QardText from '@/components/qardText';
+import Swisssection from '@/components/Swisssection';
+import QardText from '@/components/QardText';
 import AppFeatures from '@/components/AppFeatures';
 import Footer from '@/components/Footer';
 
@@ -12,7 +12,8 @@ export default function Home() {
       <Hero />
       <Swisssection />
       <QardText />
-   
+      <AppFeatures />
+      <Footer />
     </div>
   );
 }
