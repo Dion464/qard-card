@@ -3,24 +3,25 @@ import Image from 'next/image';
 
 export default function QardText() {
   return (
-    <section className="w-full min-h-[50vh] flex items-center justify-center bg-black relative">
+    <section className="w-full min-h-[40vh] sm:min-h-[50vh] flex items-center justify-center bg-black py-12 sm:py-0 relative">
       {/* Small logo in top left corner */}
-      <div className="absolute top-8 left-8">
+      <div className="absolute top-4 sm:top-8 left-4 sm:left-8">
         <Image
-          src="/path/to/logo.svg" // Update with the correct path
+          src="/public/LOGO.svg" 
           alt="Qard Logo"
-          width={40} // Adjust size as needed
-          height={40}
+          width={30} 
+          height={30}
+          className="w-[25px] h-[25px] sm:w-[40px] sm:h-[40px]"
         />
       </div>
       
-      <div className="container mx-auto flex justify-end items-center px-8">
-        <div className="max-w-[50%]">
+      <div className="container mx-auto flex justify-end items-center px-4 sm:px-8">
+        <div className="w-full sm:max-w-[50%]">
           <p
             style={{
               fontFamily: 'Helvetica Now Display',
               fontWeight: 500,
-              fontSize: '32px',
+              fontSize: 'clamp(18px, 5vw, 32px)',
               lineHeight: '130%',
               letterSpacing: '0%',
               color: 'rgba(255, 255, 255, 1)',
@@ -32,7 +33,7 @@ export default function QardText() {
             style={{
               fontFamily: 'Helvetica Now Display',
               fontWeight: 500,
-              fontSize: '32px',
+              fontSize: 'clamp(18px, 5vw, 32px)',
               lineHeight: '130%',
               letterSpacing: '0%',
               background: 'linear-gradient(355.97deg, #182D42 70.2%, #3594EC 91.99%)',
