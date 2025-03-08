@@ -12,10 +12,10 @@ export default function Hero() {
         <div className="container mx-auto px-4 sm:px-8 flex flex-col">
           {/* Main title */}
           <div className="mt-24 sm:mt-48 mb-4 sm:mb-8">
-            <div className="text-[120px] sm:text-[200px] md:text-[280px] lg:text-[320px] font-[500] leading-[0.85] tracking-[-0.02em] bg-gradient-to-r from-black via-[#50ABFF] to-[#50ABFF]/90 bg-clip-text text-transparent">
+            <div className="text-[80px] sm:text-[120px] md:text-[200px] lg:text-[320px] font-[500] leading-[0.85] tracking-[-0.02em] bg-gradient-to-r from-black via-[#50ABFF] to-[#50ABFF]/90 bg-clip-text text-transparent">
               Qard.
             </div>
-            <div className="text-[80px] sm:text-[120px] md:text-[160px] lg:text-[200px] font-[500] leading-[0.85] tracking-[-0.02em] text-[#50ABFF]/70 w-full text-center">
+            <div className="text-[50px] sm:text-[80px] md:text-[120px] lg:text-[200px] font-[500] leading-[0.85] tracking-[-0.02em] text-[#50ABFF]/70 w-full">
               Your wallet.
             </div>
           </div>
