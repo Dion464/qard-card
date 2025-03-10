@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 export default function Security() {
   return (
-    <section className="w-full min-h-[70vh] flex items-center justify-center bg-black">
-      <div className="container mx-auto flex items-center justify-between px-8">
+    <section className="w-full min-h-[50vh] flex items-center justify-center bg-black py-12">
+      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 gap-8 sm:gap-0">
         {/* Text content */}
-        <div className="max-w-lg">
+        <div className="max-w-full sm:max-w-lg">
           <h1
             style={{
               fontFamily: 'Helvetica Now Display',
               fontWeight: 500,
-              fontSize: '64px',
+              fontSize: 'clamp(36px, 8vw, 64px)',
               lineHeight: '130%',
               letterSpacing: '0%',
               color: 'rgba(255, 255, 255, 1)',
@@ -23,7 +23,7 @@ export default function Security() {
             style={{
               fontFamily: 'Helvetica Now Display',
               fontWeight: 500,
-              fontSize: '64px',
+              fontSize: 'clamp(32px, 7vw, 64px)',
               lineHeight: '130%',
               letterSpacing: '0%',
               color: 'rgba(23, 40, 59, 1)',
@@ -34,13 +34,14 @@ export default function Security() {
         </div>
 
         {/* Card image with enhanced glow effect */}
-        <div className="relative w-[400px] h-[400px] flex items-center justify-center">
+        <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center">
           <div className="absolute w-full h-full bg-[#50ABFF]/40 rounded-full blur-[150px]" />
           <Image
             src="/swissbasedcard.svg"
             alt="Qard Security Card"
-            layout="fill"
-            objectFit="contain"
+            width={400}
+            height={400}
+            className="object-contain"
           />
         </div>
       </div>

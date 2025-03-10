@@ -15,15 +15,16 @@ export default function AppFeatures() {
         <div className="bg-gradient-to-b from-[#3594EC] via-[#184470] to-[#000209] p-6 md:p-8 rounded-[30px] md:rounded-[60px] h-[300px] md:h-[375px] relative overflow-hidden">
           <div className="absolute inset-0 flex items-end justify-center">
             <div className="relative w-full h-full">
-              <Image
-                src="/undermodile.png"
-                alt="Background"
-                width={300}
-                height={200}
-                className="object-contain hidden md:block"
-                style={{ position: 'absolute', bottom: 50, right: 50}}
-              />
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[-10px] z-0 w-[400px]">
+                <Image
+                  src="/undermodile.png"
+                  alt="Background"
+                  width={300}
+                  height={250}
+                  className="object-contain w-full"
+                />
+              </div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10">
                 <Image
                   src="/mobile.svg"
                   alt="Mobile"
@@ -50,7 +51,7 @@ export default function AppFeatures() {
             <Image
               src="/secondimage.png"
               alt="Qard cards"
-              width={300}
+              width={400}
               height={200}
               className="object-contain"
             />
@@ -79,7 +80,7 @@ export default function AppFeatures() {
             <Image
               src="/lastimage.svg"
               alt="Qard box"
-              width={400}
+              width={500}
               height={300}
               className="object-contain"
             />
