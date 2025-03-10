@@ -41,7 +41,7 @@ export default function Hero() {
 
       {/* Card with enhanced glow effect */}
       <div className="absolute top-[3%] sm:top-[5%] -left-20 w-[85%] sm:w-[40%] h-[50%] sm:h-[60%]">
-        <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[150px] transform rotate-12" />
+        <div className="absolute inset-0 bg-[#50ABFF]/100 blur-[250px] transform rotate-12" />
         <Image
           src="/herocard.svg"
           alt="Qard Card"

@@ -61,7 +61,7 @@ export default function TryQard() {
           </p>
 
           {/* Email input and button container */}
-          <div className="relative flex w-full max-w-[320px]">
+          <div className="relative flex w-full max-w-[280px] sm:max-w-[320px]">
             <input
               type="email"
               placeholder="Email address"
@@ -69,36 +69,29 @@ export default function TryQard() {
                 width: '100%',
                 backgroundColor: 'rgba(30, 42, 55, 1)',
                 color: 'rgba(138, 138, 142, 1)',
-                padding: '12px 16px',
+                padding: '6px 10px',
                 borderRadius: '50px',
-                fontSize: '14px',
+                fontSize: '10px',
                 fontWeight: '400',
                 lineHeight: '130%',
                 letterSpacing: '0%',
                 outline: 'none',
-                fontFamily: 'Helvetica Now Display',
                 border: '1px solid rgba(53, 148, 236, 0.6)'
               }}
+              className="sm:text-[12px] md:text-[14px] sm:p-[8px_12px] md:p-[12px_16px]"
             />
             <button 
-              style={{
-                position: 'absolute',
-                right: '4px',
-                top: '4px',
-                bottom: '4px',
-                backgroundColor: 'transparent',
-                color: '#FFFFFF',
-                padding: '8px 20px',
-                borderRadius: '50px',
-                fontSize: '14px',
-                fontWeight: '500',
-                fontFamily: 'Helvetica Now Display',
-                whiteSpace: 'nowrap',
-                border: '2px solid rgba(53, 148, 236, 0.6)',
-                boxShadow: '0 0 0 2px rgba(53, 148, 236, 0.6)',
-                transition: 'background-color 0.3s ease',
-                cursor: 'pointer'
-              }}
+              className="
+                absolute right-[2px] top-[2px] bottom-[2px]
+                bg-[rgba(53,148,236,0.1)] text-white
+                px-1.5 py-0.5 sm:px-2 sm:py-1 md:px-3 md:py-1 rounded-full
+                text-[9px] sm:text-[10px] md:text-xs font-bold leading-[130%]
+                whitespace-nowrap border-none
+                shadow-[0_0_0_1px_rgba(53,148,236,0.5)]
+                transition-colors duration-300 ease-in-out
+                cursor-pointer align-middle
+                w-full max-w-[60px] sm:max-w-[80px] md:max-w-[120px]
+              "
             >
               Get Qard
             </button>

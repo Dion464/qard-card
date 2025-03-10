@@ -92,3 +92,14 @@ body {
     @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
   }
 }
+.responsive-button {
+  /* Default styles for larger screens */
+}
+
+@media (max-width: 768px) {
+  .responsive-button {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 6px 16px; /* Smaller padding for mobile */
+    max-width: 150px; /* Smaller max width for mobile */
+  }
+}
