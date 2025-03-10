@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function TryQard() {
   return (
-    <section className="w-full min-h-screen bg-black flex flex-col md:flex-row">
+    <section className="w-full min-h-[80vh] md:min-h-screen bg-black flex flex-row">
       {/* Left side - Image background */}
-      <div className="relative w-full md:w-1/2 h-[50vh] md:h-auto overflow-hidden">
+      <div className="relative w-[45%] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/truqardframe.svg"
@@ -18,13 +18,13 @@ export default function TryQard() {
       </div>
 
       {/* Right side - Content */}
-      <div className="w-full md:w-1/2 flex items-center justify-center py-12 md:py-0">
-        <div className="w-full max-w-[800px] px-6 md:px-16">
+      <div className="w-[55%] flex items-center justify-center py-4 md:py-12">
+        <div className="w-full max-w-[600px] px-3 md:px-8">
           <h1 
             style={{
               fontFamily: 'Helvetica Now Display',
               fontWeight: '500',
-              fontSize: 'clamp(60px, 10vw, 140px)',
+              fontSize: 'clamp(28px, 5vw, 80px)',
               lineHeight: '100%',
               letterSpacing: '0%',
               color: '#FFFFFF',
@@ -38,11 +38,11 @@ export default function TryQard() {
             style={{
               fontFamily: 'Helvetica Now Display',
               fontWeight: '500',
-              fontSize: 'clamp(60px, 10vw, 140px)',
+              fontSize: 'clamp(28px, 5vw, 80px)',
               lineHeight: '100%',
               letterSpacing: '0%',
               color: '#FFFFFF',
-              marginBottom: '32px',
+              marginBottom: '12px',
               verticalAlign: 'middle'
             }}
           >
@@ -51,17 +51,17 @@ export default function TryQard() {
           <p 
             style={{
               fontFamily: 'Helvetica Now Display',
-              fontSize: 'clamp(16px, 4vw, 20px)',
+              fontSize: 'clamp(11px, 1.8vw, 16px)',
               lineHeight: '150%',
               color: 'rgba(138, 138, 142, 1)',
-              marginBottom: '32px'
+              marginBottom: '20px'
             }}
           >
             Join our waitlist and get ready to experience the future of finance.
           </p>
 
           {/* Email input and button container */}
-          <div className="relative flex w-full max-w-[460px]">
+          <div className="relative flex w-full max-w-[320px]">
             <input
               type="email"
               placeholder="Email address"
@@ -69,9 +69,9 @@ export default function TryQard() {
                 width: '100%',
                 backgroundColor: 'rgba(30, 42, 55, 1)',
                 color: '#FFFFFF',
-                padding: '16px 140px 16px 24px',
+                padding: '10px 110px 10px 14px',
                 borderRadius: '100px',
-                fontSize: '16px',
+                fontSize: '13px',
                 fontWeight: '500',
                 lineHeight: '130%',
                 letterSpacing: '0%',
@@ -87,9 +87,9 @@ export default function TryQard() {
                 bottom: '4px',
                 backgroundColor: 'rgba(80, 171, 255, 1)',
                 color: '#FFFFFF',
-                padding: '12px 24px',
+                padding: '6px 14px',
                 borderRadius: '100px',
-                fontSize: '16px',
+                fontSize: '13px',
                 fontWeight: '500',
                 fontFamily: 'Helvetica Now Display',
                 whiteSpace: 'nowrap',
