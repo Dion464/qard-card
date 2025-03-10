@@ -68,15 +68,16 @@ export default function TryQard() {
               style={{
                 width: '100%',
                 backgroundColor: 'rgba(30, 42, 55, 1)',
-                color: '#FFFFFF',
-                padding: '10px 110px 10px 14px',
-                borderRadius: '100px',
-                fontSize: '13px',
-                fontWeight: '500',
+                color: 'rgba(138, 138, 142, 1)',
+                padding: '12px 16px',
+                borderRadius: '50px',
+                fontSize: '14px',
+                fontWeight: '400',
                 lineHeight: '130%',
                 letterSpacing: '0%',
                 outline: 'none',
-                fontFamily: 'Helvetica Now Display'
+                fontFamily: 'Helvetica Now Display',
+                border: '1px solid rgba(53, 148, 236, 0.6)'
               }}
             />
             <button 
@@ -85,15 +86,18 @@ export default function TryQard() {
                 right: '4px',
                 top: '4px',
                 bottom: '4px',
-                backgroundColor: 'rgba(80, 171, 255, 1)',
+                backgroundColor: 'transparent',
                 color: '#FFFFFF',
-                padding: '6px 14px',
-                borderRadius: '100px',
-                fontSize: '13px',
+                padding: '8px 20px',
+                borderRadius: '50px',
+                fontSize: '14px',
                 fontWeight: '500',
                 fontFamily: 'Helvetica Now Display',
                 whiteSpace: 'nowrap',
-                border: '2px solid rgba(53, 148, 236, 0.6)'
+                border: '2px solid rgba(53, 148, 236, 0.6)',
+                boxShadow: '0 0 0 2px rgba(53, 148, 236, 0.6)',
+                transition: 'background-color 0.3s ease',
+                cursor: 'pointer'
               }}
             >
               Get Qard

@@ -24,7 +24,7 @@ export default function AppFeatures() {
                   className="object-contain w-full"
                 />
               </div>
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10">
+              <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 z-10">
                 <Image
                   src="/mobile.svg"
                   alt="Mobile"
@@ -45,9 +45,9 @@ export default function AppFeatures() {
                 Wallet activation<br />takes less than
               </h2>
             </div>
-            <p className="text-[20px] sm:text-[32px] md:text-[60px] font-bold leading-none">3 minutes</p>
+            <p className="text-[15px] sm:text-[32px] md:text-[50px] font-bold leading-none">3 minutes</p>
           </div>
-          <div className="absolute top-0 right-0 transform translate-x-[15%] -translate-y-[15%] scale-[0.6] sm:scale-75 md:scale-100">
+          <div className="absolute top-0 right-0 transform translate-x-[30%] -translate-y-[30%] scale-[0.6] sm:scale-75 md:scale-100">
             <Image
               src="/secondimage.png"
               alt="Qard cards"
@@ -76,7 +76,7 @@ export default function AppFeatures() {
 
         {/* Sixth card */}
         <div className="bg-[rgba(11,30,49,1)] p-4 md:p-8 rounded-[20px] md:rounded-[60px] h-[250px] md:h-[375px] relative overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.7] sm:scale-[0.8] md:scale-100 w-full">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[2] sm:scale-[0.8] md:scale-100 w-full">
             <Image
               src="/lastimage.svg"
               alt="Qard box"
