@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function TryQard() {
   return (
-    <section className="w-full min-h-[80vh] md:min-h-screen bg-black flex flex-row">
+    <section className="w-full min-h-[40vh] md:min-h-[80vh] bg-black flex flex-row">
       {/* Left side - Image background */}
       <div className="relative w-[45%] overflow-hidden">
         <div className="absolute inset-0">

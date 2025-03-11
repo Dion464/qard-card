@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function QardChip() {
   return (
-    <div className="min-h-[500px] bg-black relative overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-8">
+      <div className="min-h-[80px] bg-black relative overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-4">
       <div className="max-w-7xl mx-auto relative">
         {/* Title */}
         <h1 className="text-white text-[32px] sm:text-[40px] md:text-[64px] lg:text-[72px] font-medium mb-10">
@@ -69,8 +69,8 @@ export default function QardChip() {
           </div>
 
           {/* Center Chip Image */}
-          <div className="w-[40%] relative">
-            <div className="relative w-full h-[300px] sm:h-[400px] md:h-[700px] lg:h-[1000px] max-w-[1500px] mx-auto -translate-y-30 lg:-translate-y-60">
+          <div className="w-full flex justify-center">
+            <div className="relative w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[900px] max-w-[1400px] mx-auto">
               <Image
                 src="/QardChip.svg"
                 alt="Qard Chip"
