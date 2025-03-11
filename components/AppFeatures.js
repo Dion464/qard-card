@@ -15,22 +15,22 @@ export default function AppFeatures() {
         <div className="bg-gradient-to-b from-[#3594EC] via-[#184470] to-[#000209] p-4 md:p-8 rounded-[20px] md:rounded-[60px] h-[250px] md:h-[375px] relative overflow-hidden">
           <div className="absolute inset-0 flex items-end justify-center">
             <div className="relative w-full h-full">
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[-5px] z-0 w-[160px] sm:w-[200px] md:w-[300px]">
-                <Image
-                  src="/undermodile.png"
-                  alt="Background"
-                  width={300}
-                  height={250}
-                  className="object-contain w-full"
-                />
-              </div>
-              <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 z-10">
+              <div className="absolute bottom-[-30px] sm:bottom-[-75px] left-1/2 transform -translate-x-1/2 z-10">
                 <Image
                   src="/mobile.svg"
                   alt="Mobile"
                   width={150}
                   height={300}
                   className="w-[90px] h-[180px] sm:w-[120px] sm:h-[240px] md:w-[200px] md:h-[400px] object-contain"
+                />
+              </div>
+              <div className="absolute top-[60px] sm:top-0 left-1/2 transform -translate-x-1/2 translate-y-[5px] z-0 w-[160px] sm:w-[200px] md:w-[300px]">
+                <Image
+                  src="/undermodile.png"
+                  alt="Background"
+                  width={300}
+                  height={250}
+                  className="object-contain w-full"
                 />
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function AppFeatures() {
         {/* Third card - blue background with card images */}
         <div className="bg-[#3594EC] p-4 md:p-8 rounded-[20px] md:rounded-[60px] h-[250px] md:h-[375px] relative overflow-hidden">
           <div className="text-white h-full flex flex-col justify-between">
-            <div className="mb-auto">
+            <div className="mb-auto mt-10 sm:mt-0">
               <h2 className="text-sm sm:text-base md:text-2xl font-normal leading-tight mb-2 md:mb-4">
                 Wallet activation<br />takes less than
               </h2>
