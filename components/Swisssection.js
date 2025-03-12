@@ -9,7 +9,7 @@ export default function Security() {
         <div className="max-w-full sm:max-w-lg">
           <h1
             style={{
-              fontFamily: 'Helvetica Now Display',
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
               fontWeight: 500,
               fontSize: 'clamp(36px, 8vw, 64px)',
               lineHeight: '130%',
@@ -21,7 +21,7 @@ export default function Security() {
           </h1>
           <p
             style={{
-              fontFamily: 'Helvetica Now Display',
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
               fontWeight: 500,
               fontSize: 'clamp(32px, 7vw, 64px)',
               lineHeight: '130%',

@@ -3,14 +3,15 @@ export default function SmartBack() {
     <div className="bg-gradient-to-b from-black to-[#0A1725] text-white min-h-screen flex flex-col items-center justify-center py-8 px-4">
       <div className="flex flex-col items-center w-full">
         {/* Smart back text */}
-        <h1 className="relative w-full overflow-hidden mb-10 md:mb-20 text-center"
+        <h1 className="relative w-full overflow-hidden mb-10 md:mb-20 text-left px-4"
             style={{
-              fontFamily: '"Helvetica Now Display", "Helvetica Neue", Helvetica, Arial, sans-serif',
-              fontSize: 'clamp(40px, 8vw, 140px)',
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Helvetica, Arial, sans-serif',
+              fontSize: 'clamp(40px, 20vw, 300px)',
               fontWeight: 500,
-              lineHeight: '96%',
+              lineHeight: '1.2',
               letterSpacing: '0%',
-              verticalAlign: 'middle'
+              verticalAlign: 'middle',
+              minHeight: '20vh',
             }}>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r whitespace-nowrap"
                 style={{

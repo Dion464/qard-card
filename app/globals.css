@@ -41,11 +41,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @font-face {
   font-family: 'Helvetica Now Display';
-  src: url('/fonts/HelveticaNowDisplay-Regular.woff2') format('woff2');
-  font-weight: 400;
+  src: url('/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/HelveticaNowDisplay-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -54,6 +54,22 @@ body {
   font-family: 'Helvetica Now Display';
   src: url('/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Bold';
+  src: url('/fonts/Helvetica/HelveticaBold/HelveticaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/helvetica-now-display/HelveticaNowDisplay-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

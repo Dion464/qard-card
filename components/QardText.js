@@ -21,8 +21,8 @@ export default function QardText() {
           <div>
             <p
               style={{
-                fontFamily: 'Helvetica Now Display',
-                fontWeight: 500,
+                fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
+                fontWeight: 'normal',
                 fontSize: 'clamp(18px, 5vw, 32px)',
                 lineHeight: '130%',
                 letterSpacing: '0%',
@@ -33,8 +33,8 @@ export default function QardText() {
             </p>
             <p
               style={{
-                fontFamily: 'Helvetica Now Display',
-                fontWeight: 500,
+                fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
+                fontWeight: 'normal',
                 fontSize: 'clamp(18px, 5vw, 32px)',
                 lineHeight: '130%',
                 letterSpacing: '0%',

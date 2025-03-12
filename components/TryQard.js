@@ -22,8 +22,8 @@ export default function TryQard() {
         <div className="w-full max-w-[600px] px-3 md:px-8">
           <h1 
             style={{
-              fontFamily: 'Helvetica Now Display',
-              fontWeight: '500',
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
+              fontWeight: 'normal',
               fontSize: 'clamp(28px, 5vw, 80px)',
               lineHeight: '100%',
               letterSpacing: '0%',
@@ -36,8 +36,8 @@ export default function TryQard() {
           </h1>
           <h2 
             style={{
-              fontFamily: 'Helvetica Now Display',
-              fontWeight: '500',
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
+              fontWeight: 'normal',
               fontSize: 'clamp(28px, 5vw, 80px)',
               lineHeight: '100%',
               letterSpacing: '0%',
@@ -50,7 +50,7 @@ export default function TryQard() {
           </h2>
           <p 
             style={{
-              fontFamily: 'Helvetica Now Display',
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
               fontSize: 'clamp(11px, 1.8vw, 16px)',
               lineHeight: '150%',
               color: 'rgba(138, 138, 142, 1)',
