@@ -4,11 +4,8 @@ export default function QardChip() {
   return (
       <div className="min-h-[80px] bg-black relative overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-4">
       <div className="max-w-7xl mx-auto relative">
-        {/* Title */}
-        <h1 className="text-white text-[32px] sm:text-[40px] md:text-[64px] lg:text-[72px] font-medium mb-10">
-          Meet<br />
-          Qard chip.
-        </h1>
+      
+       
 
         {/* Modified layout structure for better mobile responsiveness */}
         <div className="flex flex-col md:flex-row md:justify-between relative">

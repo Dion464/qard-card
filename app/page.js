@@ -42,7 +42,7 @@ export default function Home() {
       <QardText />
       <AppFeatures />
       <SmartBack />
-      {!isMobile && <Crypto />}
+   
       <Search />
       <QardChip />
       <TryQard />

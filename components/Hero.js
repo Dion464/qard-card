@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-[90vh] sm:min-h-screen relative overflow-hidden bg-black">
+    <section className="w-full min-h-[90vh] sm:min-h-screen relative overflow-visible bg-black">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-[#0A1F3B]/70" />
 
