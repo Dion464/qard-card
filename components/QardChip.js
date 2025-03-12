@@ -7,20 +7,9 @@ export default function QardChip() {
       {/* Mobile Layout */}
       <div className="sm:hidden w-full min-h-[45vh] relative flex flex-col">
         {/* Background image with glow */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-[url('/qardchip.svg')] bg-contain bg-no-repeat p-8">
           <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[60px]" />
-          <div className="relative w-full h-full">
-            <Image
-              src="/qardchip.svg"
-              alt="Qard Chip"
-              layout="fill"
-              objectFit="contain"
-              className="p-8"
-              priority
-            />
-          </div>
         </div>
-
         {/* Stacked features */}
         <div className="relative z-10 flex flex-col gap-8 px-6 pt-12">
           {/* Feature 1 */}
@@ -40,7 +29,6 @@ export default function QardChip() {
               Protection from any invasive attacks
             </p>
           </div>
-
           {/* Feature 2 */}
           <div className="flex flex-col gap-1 border-none">
             <div className="flex items-center gap-4">
@@ -58,7 +46,6 @@ export default function QardChip() {
               Protected against water damage
             </p>
           </div>
-
           {/* Feature 3 */}
           <div className="flex flex-col gap-1 border-none">
             <div className="flex items-center gap-4">
