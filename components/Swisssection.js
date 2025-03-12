@@ -6,30 +6,30 @@ export default function Security() {
     <section className="w-full min-h-[50vh] flex items-center justify-center bg-black py-12">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 gap-8 sm:gap-0">
         {/* Text content */}
-        <div className="max-w-full sm:max-w-lg">
+        <div className="max-w-full sm:max-w-lg text-center">
           <h1
             style={{
               fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
               fontWeight: 500,
-              fontSize: 'clamp(36px, 8vw, 64px)',
+              fontSize: 'clamp(20px, 4vw, 36px)',
               lineHeight: '130%',
               letterSpacing: '0%',
               color: 'rgba(255, 255, 255, 1)',
             }}
           >
-            <span role="img" aria-label="Swiss Flag">🇨🇭</span> Swiss based
+            <span role="img" aria-label="Swiss Flag"></span> Qard is redefining the wallet experience by delivering top-level security, simplicity and accessibility.
           </h1>
           <p
             style={{
               fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
               fontWeight: 500,
-              fontSize: 'clamp(32px, 7vw, 64px)',
+              fontSize: 'clamp(16px, 3vw, 28px)',
               lineHeight: '130%',
               letterSpacing: '0%',
               color: 'rgba(23, 40, 59, 1)',
             }}
           >
-            EAL6+ security standard
+            Simplicity and accessibility.
           </p>
         </div>
 

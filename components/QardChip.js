@@ -1,143 +1,223 @@
+import React from 'react';
 import Image from 'next/image';
 
 export default function QardChip() {
   return (
-      <div className="min-h-[80px] bg-black relative overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-4">
-      <div className="max-w-7xl mx-auto relative">
-      
-       
+    <section className="w-full min-h-[50vh] sm:min-h-[90vh] relative overflow-hidden bg-black py-8">
+      {/* Mobile Layout */}
+      <div className="sm:hidden w-full min-h-[45vh] relative flex flex-col">
+        {/* Background image with glow */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[60px]" />
+          <Image
+            src="/qardchip.svg"
+            alt="Qard Chip"
+            fill
+            className="object-contain p-8"
+            priority
+          />
+        </div>
 
-        {/* Modified layout structure for better mobile responsiveness */}
-        <div className="flex flex-col md:flex-row md:justify-between relative">
-          
-          {/* Left Side Features - Full width on mobile, 30% on larger screens */}
-          <div className="w-full md:w-[30%] space-y-6 md:space-y-8 mb-8 md:mb-0">
-            <div className="flex gap-2 md:gap-4 items-start">
+        {/* Stacked features */}
+        <div className="relative z-10 flex flex-col gap-8 px-6 pt-12">
+          {/* Feature 1 */}
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
                 alt="Security Icon"
-                width={46}
-                height={46}
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-[46px] lg:h-[46px]"
+                width={36}
+                height={36}
               />
-              <div>
-                <h3 className="text-white text-[12px] sm:text-sm md:text-xl lg:text-2xl font-medium mb-1">
-                The highest chip security standard.
-                </h3>
-                <p className="text-[#8a8a8e] text-[10px] sm:text-xs md:text-base lg:text-lg leading-relaxed">
-                Protection from any invasive and non-invasive attacks.
-                </p>
-              </div>
+              <p className="text-white text-base md:text-lg font-medium">
+                High security standard
+              </p>
             </div>
-
-            <div className="flex gap-2 md:gap-4 items-start">
-              <Image 
-                src="/protecionicon.svg"
-                alt="Security Icon"
-                width={46}
-                height={46}
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-[46px] lg:h-[46px]"
-              />
-              <div>
-                <h3 className="text-white text-[12px] sm:text-sm md:text-xl lg:text-2xl font-medium mb-1">
-                Maximum resistance to dust, 
-                </h3>
-                <p className="text-[#8a8a8e] text-[10px] sm:text-xs md:text-base lg:text-lg leading-relaxed">
-                water and temperature extremes (–25° to 50°C).
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-2 md:gap-4 items-start">
-              <Image 
-                src="/protecionicon.svg"
-                alt="Security Icon"
-                width={46}
-                height={46}
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-[46px] lg:h-[46px]"
-              />
-              <div>
-                <h3 className="text-white text-[12px] sm:text-sm md:text-xl lg:text-2xl font-medium mb-1">
-                Maximum resistance to dust, 
-                </h3>
-                <p className="text-[#8a8a8e] text-[10px] sm:text-xs md:text-base lg:text-lg leading-relaxed">
-                water and temperature extremes (–25° to 50°C).
-                </p>
-              </div>
-            </div>
+            <p className="text-[#8a8a8e] text-sm pl-[52px]">
+              Protection from any invasive attacks
+            </p>
           </div>
 
-          {/* Center Chip Image - Now positioned below text/icons on mobile */}
-          <div className="w-full md:order-none mb-8 md:mb-0">
-            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[700px] lg:h-[900px] max-w-[1400px] mx-auto">
-              <Image
-                src="/QardChip.svg"
-                alt="Qard Chip"
-                fill
-                className="object-contain"
-                priority
+          {/* Feature 2 */}
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-4">
+              <Image 
+                src="/protecionicon.svg"
+                alt="Security Icon"
+                width={36}
+                height={36}
               />
+              <p className="text-white text-base md:text-lg font-medium">
+                Water resistant
+              </p>
             </div>
+            <p className="text-[#8a8a8e] text-sm pl-[52px]">
+              Protected against water damage
+            </p>
           </div>
 
-          {/* Right Side Features - Full width on mobile, 30% on larger screens */}
-          <div className="w-full md:w-[30%] space-y-6 md:space-y-8">
-            <div className="flex gap-2 md:gap-4 items-start">
+          {/* Feature 3 */}
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
                 alt="Security Icon"
-                width={46}
-                height={46}
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-[46px] lg:h-[46px]"
+                width={36}
+                height={36}
               />
-              <div>
-                <h3 className="text-white text-[12px] sm:text-sm md:text-xl lg:text-2xl font-medium mb-1">
+              <p className="text-white text-base md:text-lg font-medium">
+                Temperature proof
+              </p>
+            </div>
+            <p className="text-[#8a8a8e] text-sm pl-[52px]">
+              Resistant to temperature extremes
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden sm:block">
+        {/* Center card with blue glow */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-[75%] md:w-[65%] max-w-[700px] aspect-square">
+          <div className="absolute inset-0 bg-[#50ABFF]/40 blur-[140px] rounded-3xl" />
+          <div className="relative w-full h-full rounded-3xl overflow-hidden">
+            <Image
+              src="/qardchip.svg"
+              alt="Qard Chip"
+              fill
+              className="object-contain p-12"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Desktop features */}
+        <div className="absolute top-[15%] left-[5%] max-w-[350px]">
+          <div className="flex items-start gap-5">
+            <Image 
+              src="/protecionicon.svg"
+              alt="Security Icon"
+              width={48}
+              height={48}
+              className="mt-1"
+            />
+            <div>
+              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-1">
                 The highest chip security standard.
-                </h3>
-                <p className="text-[#8a8a8e] text-[10px] sm:text-xs md:text-base lg:text-lg leading-relaxed">
+              </h3>
+              <p className="text-[#8a8a8e] text-base md:text-lg lg:text-xl leading-relaxed">
                 Protection from any invasive and non-invasive attacks.
-                </p>
-              </div>
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div className="flex gap-2 md:gap-4 items-start">
-              <Image 
-                src="/protecionicon.svg"
-                alt="Security Icon"
-                width={46}
-                height={46}
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-[46px] lg:h-[46px]"
-              />
-              <div>
-                <h3 className="text-white text-[12px] sm:text-sm md:text-xl lg:text-2xl font-medium mb-1">
-                Maximum resistance to dust, 
-                </h3>
-                <p className="text-[#8a8a8e] text-[10px] sm:text-xs md:text-base lg:text-lg leading-relaxed">
-                water and temperature extremes (–25° to 50°C).
-                </p>
-              </div>
+        {/* Top right feature */}
+        <div className="absolute top-[15%] right-[5%] max-w-[350px]">
+          <div className="flex items-start gap-5">
+            <Image 
+              src="/protecionicon.svg"
+              alt="Security Icon"
+              width={48}
+              height={48}
+              className="mt-1"
+            />
+            <div>
+              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-1">
+                The highest chip security standard.
+              </h3>
+              <p className="text-[#8a8a8e] text-base md:text-lg lg:text-xl leading-relaxed">
+                Protection from any invasive and non-invasive attacks.
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div className="flex gap-2 md:gap-4 items-start">
-              <Image 
-                src="/protecionicon.svg"
-                alt="Security Icon"
-                width={46}
-                height={46}
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-[46px] lg:h-[46px]"
-              />
-              <div>
-                <h3 className="text-white text-[12px] sm:text-sm md:text-xl lg:text-2xl font-medium mb-1">
-                Maximum resistance to dust, 
-                </h3>
-                <p className="text-[#8a8a8e] text-[10px] sm:text-xs md:text-base lg:text-lg leading-relaxed">
-                water and temperature extremes (–25° to 50°C).
-                </p>
-              </div>
+        {/* Middle left feature */}
+        <div className="absolute top-[45%] left-[5%] max-w-[350px]">
+          <div className="flex items-start gap-5">
+            <Image 
+              src="/protecionicon.svg"
+              alt="Security Icon"
+              width={48}
+              height={48}
+              className="mt-1"
+            />
+            <div>
+              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-1">
+                Maximum resistance
+              </h3>
+              <p className="text-[#8a8a8e] text-base md:text-lg lg:text-xl leading-relaxed">
+                to dust, water and temperature extremes (-25° to 50°C).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Middle right feature */}
+        <div className="absolute top-[45%] right-[5%] max-w-[350px]">
+          <div className="flex items-start gap-5">
+            <Image 
+              src="/protecionicon.svg"
+              alt="Security Icon"
+              width={48}
+              height={48}
+              className="mt-1"
+            />
+            <div>
+              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-1">
+                Maximum resistance
+              </h3>
+              <p className="text-[#8a8a8e] text-base md:text-lg lg:text-xl leading-relaxed">
+                to dust, water and temperature extremes (-25° to 50°C).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom left feature */}
+        <div className="absolute bottom-[15%] left-[5%] max-w-[350px]">
+          <div className="flex items-start gap-5">
+            <Image 
+              src="/protecionicon.svg"
+              alt="Security Icon"
+              width={48}
+              height={48}
+              className="mt-1"
+            />
+            <div>
+              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-1">
+                Maximum resistance
+              </h3>
+              <p className="text-[#8a8a8e] text-base md:text-lg lg:text-xl leading-relaxed">
+                to dust, water and temperature extremes (-25° to 50°C).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom right feature */}
+        <div className="absolute bottom-[15%] right-[5%] max-w-[350px]">
+          <div className="flex items-start gap-5">
+            <Image 
+              src="/protecionicon.svg"
+              alt="Security Icon"
+              width={48}
+              height={48}
+              className="mt-1"
+            />
+            <div>
+              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-1">
+                Maximum resistance
+              </h3>
+              <p className="text-[#8a8a8e] text-base md:text-lg lg:text-xl leading-relaxed">
+                to dust, water and temperature extremes (-25° to 50°C).
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

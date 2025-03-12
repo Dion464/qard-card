@@ -15,9 +15,7 @@ export default function Header() {
         </div>
       </div>
       <div>
-        <button className="bg-transparent border border-[#50ABFF] text-[#50ABFF] text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-1 rounded-full hover:bg-[#50ABFF]/10 transition-all">
-          Try Qard
-        </button>
+       
       </div>
     </header>
   );

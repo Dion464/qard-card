@@ -42,9 +42,9 @@ export default function Home() {
       <QardText />
       <AppFeatures />
       <SmartBack />
-   
-      <Search />
       <QardChip />
+      <Search />
+   
       <TryQard />
       <Footer />
     </div>

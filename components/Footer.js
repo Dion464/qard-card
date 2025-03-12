@@ -15,10 +15,7 @@ const Footer = () => {
               className="transform -translate-x-1"
             />
           </Link>
-          <div className="text-[15px] text-gray-400 space-y-1">
-            <p className="font-light">Global headquarters, Qard AG</p>
-            <p className="font-light">Baarerstrasse 10, 6300 Zug, Switzerland</p>
-          </div>
+      
         </div>
         
         <div className="flex gap-12 mt-8 md:mt-0 text-[15px]">

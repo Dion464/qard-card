@@ -40,20 +40,22 @@ export default function Hero() {
             fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
           }}
         >
-          From $45
+       
         </p>
-        <p
-          className="text-[#6B7280] text-xs sm:text-base md:text-lg font-light leading-relaxed"
-          style={{
-            fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
-          }}
-        >
-          As sleek as your bank card, as secure as a bank vault.
-          <br className="hidden sm:block" />
-          Store, buy, earn, transfer, and swap thousands of coins
-          <br className="hidden sm:block" />
-          and tokens in one place.
-        </p>
+        <div className="flex flex-col items-start">
+          <p
+            className="text-[#6B7280] text-xs sm:text-base md:text-lg font-light leading-relaxed -ml-8"
+            style={{
+              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
+            }}
+          >
+            As sleek as your bank card, as secure as a bank vault.
+            <br className="hidden sm:block" />
+            Store, buy, earn, transfer, and swap thousands of coins
+            <br className="hidden sm:block" />
+            and tokens in one place.
+          </p>
+        </div>
 
         <button
           className="mt-2 sm:mt-8 bg-transparent border border-[#50ABFF] text-[#50ABFF] px-3 sm:px-6 py-1 sm:py-2 rounded-full text-xs sm:text-base font-light inline-flex items-center hover:bg-[#50ABFF]/10 transition-all"
@@ -61,8 +63,8 @@ export default function Hero() {
             fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
           }}
         >
-          Try Qard
-          <span className="ml-2">→</span>
+          Coming Soon
+          <span className="ml-4"></span>
         </button>
       </div>
 
