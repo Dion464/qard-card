@@ -9,13 +9,16 @@ export default function QardChip() {
         {/* Background image with glow */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[60px]" />
-          <Image
-            src="/qardchip.svg"
-            alt="Qard Chip"
-            fill
-            className="object-contain p-8"
-            priority
-          />
+          <div className="relative w-full h-full">
+            <Image
+              src="/qardchip.svg"
+              alt="Qard Chip"
+              layout="fill"
+              objectFit="contain"
+              className="p-8"
+              priority
+            />
+          </div>
         </div>
 
         {/* Stacked features */}
