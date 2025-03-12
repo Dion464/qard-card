@@ -4,12 +4,13 @@ import Image from 'next/image';
 export default function QardChip() {
   return (
     <section className="w-full min-h-[50vh] sm:min-h-[90vh] relative overflow-hidden bg-black py-8">
+      {/* Background image with glow */}
+      <div className="absolute inset-0 z-0 bg-[url('/qardchip.svg')] bg-contain bg-no-repeat p-8">
+        <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[60px]" />
+      </div>
+
       {/* Mobile Layout */}
       <div className="sm:hidden w-full min-h-[45vh] relative flex flex-col">
-        {/* Background image with glow */}
-        <div className="absolute inset-0 z-0 bg-[url('/qardchip.svg')] bg-contain bg-no-repeat p-8">
-          <div className="absolute inset-0 bg-[#50ABFF]/30 blur-[60px]" />
-        </div>
         {/* Stacked features */}
         <div className="relative z-10 flex flex-col gap-8 px-6 pt-12">
           {/* Feature 1 */}
@@ -71,15 +72,7 @@ export default function QardChip() {
         {/* Center card with blue glow */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-[75%] md:w-[65%] max-w-[700px] aspect-square">
           <div className="absolute inset-0 bg-[#50ABFF]/40 blur-[140px] rounded-3xl" />
-          <div className="relative w-full h-full rounded-3xl overflow-hidden">
-            <Image
-              src="/qardchip.svg"
-              alt="Qard Chip"
-              fill
-              className="object-contain p-12"
-              priority
-            />
-          </div>
+          <div className="relative w-full h-full rounded-3xl overflow-hidden bg-[url('/qardchip.svg')] bg-contain bg-no-repeat p-12" />
         </div>
 
         {/* Desktop features */}
