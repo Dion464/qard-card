@@ -17,7 +17,7 @@ export default function Security() {
               color: 'rgba(255, 255, 255, 1)',
             }}
           >
-            <span role="img" aria-label="Swiss Flag"></span> Qard is redefining the wallet experience by delivering top-level security, simplicity and accessibility.
+            <span role="img" aria-label="Swiss Flag"></span> Qard is redefining the wallet experience by delivering top-level security, 
           </h1>
           <p
             style={{

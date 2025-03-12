@@ -32,6 +32,16 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Glow effect */}
+      <div 
+        className="absolute bottom-0 right-0 w-[800px] h-[800px] rounded-full"
+        style={{
+          background: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.25) 0%, rgba(0, 122, 255, 0.15) 25%, rgba(0, 122, 255, 0.05) 50%, rgba(0, 122, 255, 0) 100%)',
+          transform: 'translate(30%, 60%)',
+          filter: 'blur(50px)',
+        }}
+      />
+
       {/* Right side content - moves below on mobile */}
       <div className="absolute top-[60vh] left-4 sm:top-48 sm:right-8 sm:left-auto max-w-[90%] sm:max-w-[380px]">
         <p
@@ -42,20 +52,18 @@ export default function Hero() {
         >
        
         </p>
-        <div className="flex flex-col items-start">
-          <p
-            className="text-[#6B7280] text-xs sm:text-base md:text-lg font-light leading-relaxed -ml-8"
-            style={{
-              fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
-            }}
-          >
-            As sleek as your bank card, as secure as a bank vault.
-            <br className="hidden sm:block" />
-            Store, buy, earn, transfer, and swap thousands of coins
-            <br className="hidden sm:block" />
-            and tokens in one place.
-          </p>
-        </div>
+        <p
+          className="text-[#6B7280] text-xs sm:text-base md:text-lg font-light leading-relaxed"
+          style={{
+            fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
+          }}
+        >
+          As sleek as your bank card, as secure as a bank vault.
+          <br className="hidden sm:block" />
+          Store, buy, earn, transfer, and swap thousands of coins
+          <br className="hidden sm:block" />
+          and tokens in one place.
+        </p>
 
         <button
           className="mt-2 sm:mt-8 bg-transparent border border-[#50ABFF] text-[#50ABFF] px-3 sm:px-6 py-1 sm:py-2 rounded-full text-xs sm:text-base font-light inline-flex items-center hover:bg-[#50ABFF]/10 transition-all"
@@ -64,7 +72,7 @@ export default function Hero() {
           }}
         >
           Coming Soon
-          <span className="ml-4"></span>
+          <span className="ml-2"></span>
         </button>
       </div>
 

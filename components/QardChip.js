@@ -21,7 +21,7 @@ export default function QardChip() {
         {/* Stacked features */}
         <div className="relative z-10 flex flex-col gap-8 px-6 pt-12">
           {/* Feature 1 */}
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 border-none">
             <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
@@ -39,7 +39,7 @@ export default function QardChip() {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 border-none">
             <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
@@ -57,7 +57,7 @@ export default function QardChip() {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 border-none">
             <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
