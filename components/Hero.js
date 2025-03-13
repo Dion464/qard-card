@@ -46,8 +46,8 @@ export default function Hero() {
       <div 
         className="absolute top-0 left-0 w-full h-full sm:hidden"
         style={{
-          background: 'radial-gradient(circle at 50% 30%, rgba(80, 171, 255, 0.3) 0%, rgba(0, 0, 0, 0) 70%)',
-          filter: 'blur(40px)',
+          background: 'radial-gradient(circle at 50% 30%, rgba(80, 171, 255, 0.15) 0%, rgba(0, 0, 0, 0) 70%)',
+          filter: 'blur(30px)',
         }}
       />
 

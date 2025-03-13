@@ -35,7 +35,7 @@ export default function Security() {
 
         {/* Card image with enhanced glow effect */}
         <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center">
-          <div className="absolute w-full h-full bg-[#50ABFF]/40 rounded-full blur-[150px]" />
+          <div className="absolute w-full h-full bg-[#50ABFF]/20 sm:bg-[#50ABFF]/40 rounded-full blur-[100px] sm:blur-[150px]" />
           <Image
             src="/swissbasedcard.svg"
             alt="Qard Security Card"
