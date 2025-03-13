@@ -34,11 +34,11 @@ export default function Hero() {
 
       {/* Enhanced Glow effects */}
       <div 
-        className="absolute bottom-0 right-0 w-[800px] h-[800px] rounded-full opacity-70 sm:opacity-100"
+        className="absolute bottom-0 right-0 w-[800px] h-[800px] rounded-full opacity-80 sm:opacity-100"
         style={{
-          background: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.25) 0%, rgba(0, 122, 255, 0.15) 25%, rgba(0, 122, 255, 0.05) 50%, rgba(0, 122, 255, 0) 100%)',
+          background: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.35) 0%, rgba(0, 122, 255, 0.25) 25%, rgba(0, 122, 255, 0.15) 50%, rgba(0, 122, 255, 0) 100%)',
           transform: 'translate(30%, 60%)',
-          filter: 'blur(50px)',
+          filter: 'blur(60px)',
         }}
       />
 
@@ -46,8 +46,26 @@ export default function Hero() {
       <div 
         className="absolute top-0 left-0 w-full h-full sm:hidden"
         style={{
-          background: 'radial-gradient(circle at 50% 30%, rgba(80, 171, 255, 0.2) 0%, rgba(0, 0, 0, 0) 70%)',
-          filter: 'blur(30px)',
+          background: 'radial-gradient(circle at 50% 30%, rgba(80, 171, 255, 0.3) 0%, rgba(0, 0, 0, 0) 70%)',
+          filter: 'blur(40px)',
+        }}
+      />
+
+      {/* New center glow effect */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-50 sm:opacity-30"
+        style={{
+          background: 'radial-gradient(circle, rgba(80, 171, 255, 0.25) 0%, rgba(0, 122, 255, 0.15) 30%, rgba(0, 0, 0, 0) 70%)',
+          filter: 'blur(45px)',
+        }}
+      />
+
+      {/* New top-left glow */}
+      <div 
+        className="absolute top-0 left-0 w-[500px] h-[500px] opacity-60 sm:opacity-40"
+        style={{
+          background: 'radial-gradient(circle, rgba(80, 171, 255, 0.2) 0%, rgba(0, 122, 255, 0.1) 40%, rgba(0, 0, 0, 0) 70%)',
+          filter: 'blur(50px)',
         }}
       />
 
@@ -87,7 +105,7 @@ export default function Hero() {
 
       {/* Card with enhanced glow effect */}
       <div className="absolute top-[3%] sm:top-[5%] -left-20 w-[85%] sm:w-[40%] h-[50%] sm:h-[60%]">
-        <div className="absolute inset-0 bg-[#50ABFF]/100 blur-[250px] transform rotate-12 opacity-70 sm:opacity-100" />
+        <div className="absolute inset-0 bg-[#50ABFF]/100 blur-[300px] transform rotate-12 opacity-80 sm:opacity-100" />
         <Image
           src="/herocard.svg"
           alt="Qard Card"
