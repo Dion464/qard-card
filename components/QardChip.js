@@ -62,13 +62,14 @@ export default function QardChip() {
       {/* Desktop Layout */}
       <div className="hidden sm:block">
         {/* Center card */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-[75%] md:w-[65%] max-w-[700px]">
-          <div className="relative w-full h-full overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-[75%] md:w-[65%] max-w-[700px] h-[500px]">
+          <div className="relative w-full h-full">
             <Image
               src="/QardChip.svg"
               alt="Qard Chip"
-              layout="fill"
-              objectFit="contain"
+              width={700}
+              height={700}
+              className="object-contain"
               priority
             />
           </div>
