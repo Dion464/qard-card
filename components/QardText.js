@@ -15,9 +15,9 @@ export default function QardText() {
         />
       </div>
       
-      <div className="container mx-auto flex flex-col sm:flex-row justify-end items-center px-4 sm:px-8">
-        <div className="w-full sm:max-w-[50%] flex items-center">
-          <div className="pr-4 sm:pr-8 ">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center px-4 sm:px-8">
+        <div className="w-full sm:max-w-[50%] flex items-center justify-center text-center">
+          <div className="pr-4 sm:pr-8">
             <p
               style={{
                 fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
@@ -28,7 +28,7 @@ export default function QardText() {
                 color: 'rgba(255, 255, 255, 1)',
               }}
             >
-              Qard is redefining the wallet experience by delivering top-level security, simplicity and accessibility.
+             Enjoy complete autonomy and independence while managing your assets with a single tap.
             </p>
             <p
               style={{
@@ -42,7 +42,7 @@ export default function QardText() {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              Enjoy complete autonomy and independence while managing your assets with a single tap. Qard Wallet breaks down barriers for crypto newcomers and enhances the custodial experience for advanced users.
+              Qard Wallet breaks down barriers for crypto newcomers and enhances the custodial experience for advanced users.
             </p>
           </div>
         </div>

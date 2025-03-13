@@ -70,9 +70,9 @@ export default function Hero() {
       />
 
       {/* Right side content - moves below on mobile */}
-      <div className="absolute top-[60vh] left-4 sm:top-48 sm:right-8 sm:left-auto max-w-[90%] sm:max-w-[380px]">
+      <div className="absolute top-[60vh] left-4 sm:top-48 sm:right-[15%] sm:left-auto max-w-[90%] sm:max-w-[380px]">
         <p
-          className="text-white text-lg sm:text-2xl md:text-3xl font-light mb-1 sm:mb-3"
+          className="text-white text-2xl sm:text-3xl md:text-4xl font-light mb-1 sm:mb-3"
           style={{
             fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
           }}
@@ -80,7 +80,7 @@ export default function Hero() {
        
         </p>
         <p
-          className="text-[#6B7280] text-xs sm:text-base md:text-lg font-light leading-relaxed"
+          className="text-[#6B7280] text-base sm:text-lg md:text-xl font-light leading-relaxed"
           style={{
             fontFamily: 'Helvetica Now Display, Helvetica Neue, Arial, sans-serif',
           }}
