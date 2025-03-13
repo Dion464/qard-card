@@ -3,24 +3,24 @@ import Image from 'next/image';
 
 export default function QardChip() {
   return (
-    <section className="w-full min-h-[50vh] sm:min-h-[90vh] relative overflow-hidden bg-black py-8">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/QardChip.svg"
-          alt="Qard Chip"
-          layout="fill"
-          objectFit="contain"
-          priority
-        />
-      </div>
-
+    <section className="w-full min-h-[40vh] sm:min-h-[90vh] relative overflow-hidden bg-black py-8">
       {/* Mobile Layout */}
-      <div className="sm:hidden w-full min-h-[45vh] relative flex flex-col">
-        {/* Stacked features */}
-        <div className="relative z-10 flex flex-col gap-8 px-6 pt-12">
-          {/* Feature 1 */}
-          <div className="flex flex-col gap-1">
+      <div className="sm:hidden w-full min-h-[60vh] relative flex flex-col">
+        {/* Center image */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <Image
+            src="/QardChip.svg"
+            alt="Qard Chip"
+            width={300}
+            height={300}
+            className="object-contain"
+            priority
+          />
+        </div>
+
+        {/* Top feature */}
+        <div className="relative z-20 pt-4">
+          <div className="flex flex-col gap-1 px-6">
             <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
@@ -28,7 +28,7 @@ export default function QardChip() {
                 width={36}
                 height={36}
               />
-              <p className="text-white text-base md:text-lg font-medium">
+              <p className="text-white text-base font-medium">
                 High security standard
               </p>
             </div>
@@ -36,8 +36,11 @@ export default function QardChip() {
               Protection from any invasive attacks
             </p>
           </div>
-          {/* Feature 2 */}
-          <div className="flex flex-col gap-1">
+        </div>
+
+        {/* Bottom feature */}
+        <div className="absolute bottom-4 left-0 right-0 z-20">
+          <div className="flex flex-col gap-1 px-6">
             <div className="flex items-center gap-4">
               <Image 
                 src="/protecionicon.svg"
@@ -45,24 +48,7 @@ export default function QardChip() {
                 width={36}
                 height={36}
               />
-              <p className="text-white text-base md:text-lg font-medium">
-                Water resistant
-              </p>
-            </div>
-            <p className="text-[#8a8a8e] text-sm pl-[52px]">
-              Protected against water damage
-            </p>
-          </div>
-          {/* Feature 3 */}
-          <div className="flex flex-col gap-1">
-            <div className="flex items-center gap-4">
-              <Image 
-                src="/protecionicon.svg"
-                alt="Security Icon"
-                width={36}
-                height={36}
-              />
-              <p className="text-white text-base md:text-lg font-medium">
+              <p className="text-white text-base font-medium">
                 Temperature proof
               </p>
             </div>

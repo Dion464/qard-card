@@ -19,7 +19,7 @@ export default function Search() {
             alt="Cryptocurrency Icons"
             width={500}
             height={300}
-            className="w-[300px] sm:w-[400px] md:w-[500px] object-contain"
+            className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[1000px] object-contain transform lg:translate-x-60 lg:translate-y-40"
             priority
           />
         </div>
